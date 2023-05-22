@@ -1,0 +1,6 @@
+var namespace_seal_escape_1_1_model_1_1_other_models_1_1_interfaces =
+[
+    [ "ILeaderboardEntryModel", "interface_seal_escape_1_1_model_1_1_other_models_1_1_interfaces_1_1_i_leaderboard_entry_model.html", "interface_seal_escape_1_1_model_1_1_other_models_1_1_interfaces_1_1_i_leaderboard_entry_model" ],
+    [ "IPowerupModel", "interface_seal_escape_1_1_model_1_1_other_models_1_1_interfaces_1_1_i_powerup_model.html", "interface_seal_escape_1_1_model_1_1_other_models_1_1_interfaces_1_1_i_powerup_model" ],
+    [ "IShopItemModel", "interface_seal_escape_1_1_model_1_1_other_models_1_1_interfaces_1_1_i_shop_item_model.html", "interface_seal_escape_1_1_model_1_1_other_models_1_1_interfaces_1_1_i_shop_item_model" ]
+];

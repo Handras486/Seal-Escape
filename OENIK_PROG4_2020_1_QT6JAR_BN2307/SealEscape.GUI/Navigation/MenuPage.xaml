@@ -1,0 +1,34 @@
+﻿<Page x:Class="OENIK_PROG4_2020_1_QT6JAR_BN2307.Navigation.MenuPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:OENIK_PROG4_2020_1_QT6JAR_BN2307.Navigation"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080"  d:DesignWidth="1920"
+      Title="MenuPage"
+      FontFamily="Rockwell"
+      FontSize="36">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" FontSize="140" Text="Seal Escape" HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"  >
+            <Button Background="#FF4179AB" BorderBrush="Aquamarine" Content="Play Game" Height="100" Width="250" Foreground="Black" Margin="10" Click="Play_Click"/>
+            <Button Background="#FF4179AB" BorderBrush="Aquamarine" Content="Shop" Height="100" Width="250" Foreground="Black" Margin="10" Click="Shop_Click"/>
+            <Button Background="#FF4179AB" BorderBrush="Aquamarine" Content="Encyclopedia" Height="100" Width="250" Foreground="Black" Margin="10" Click="Encyclopedia_Click"/>
+            <Button Background="#FF4179AB" BorderBrush="Aquamarine" Content="Statistics" Height="100" Width="250" Foreground="Black" Margin="10" Click="Statistics_Click"/>
+            <Button Background="#FF4179AB" BorderBrush="Aquamarine" Content="Quit Game" Height="100" Width="250" Foreground="Black" Margin="10" Click="Quit_Click"/>
+        </StackPanel>
+       
+
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/menubackground.png"/>
+        </Grid.Background>
+    </Grid>
+</Page>

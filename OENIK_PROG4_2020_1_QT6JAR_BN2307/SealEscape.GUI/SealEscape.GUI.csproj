@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{24DDC1A3-DFDB-429B-8A74-ED3FD5A6B091}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OENIK_PROG4_2020_1_QT6JAR_BN2307</RootNamespace>
+    <AssemblyName>OENIK_PROG4_2020_1_QT6JAR_BN2307</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>oenik.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>oenik.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Control\Control.cs" />
+    <Compile Include="Control\MenuControl.cs" />
+    <Compile Include="Navigation\EncyclopediaPage.xaml.cs">
+      <DependentUpon>EncyclopediaPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation\EscapePage.xaml.cs">
+      <DependentUpon>EscapePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation\GamePage.xaml.cs">
+      <DependentUpon>GamePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation\MenuPage.xaml.cs">
+      <DependentUpon>MenuPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation\PlayGamePage.xaml.cs">
+      <DependentUpon>PlayGamePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation\ShopPage.xaml.cs">
+      <DependentUpon>ShopPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation\StatisticsPage.xaml.cs">
+      <DependentUpon>StatisticsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Renderer\GameBrushes.cs" />
+    <Compile Include="Renderer\GameRenderer.cs" />
+    <Page Include="Navigation\EncyclopediaPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Navigation\EscapePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Navigation\GamePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Navigation\MenuPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Navigation\PlayGamePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Navigation\ShopPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Navigation\StatisticsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Images\strongenemy1.png" />
+    <EmbeddedResource Include="Images\strongfood1.png" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="oenik.ruleset" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
+    <Analyzer Include="..\packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\weakfood1.png" />
+    <EmbeddedResource Include="Images\heart1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SealEscape.Logic\SealEscape.Logic.csproj">
+      <Project>{847B1DB3-E3DD-4FDC-906C-249C23F1D171}</Project>
+      <Name>SealEscape.Logic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SealEscape.Model\SealEscape.Model.csproj">
+      <Project>{342DD2F1-E64E-4E4C-A5AD-21F45CE2B469}</Project>
+      <Name>SealEscape.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\background1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\weakenemy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\seal1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\menubackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\fishpowerup.png" />
+    <Resource Include="Images\lifepowerup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\background2.png" />
+    <EmbeddedResource Include="Images\seal2.png" />
+    <EmbeddedResource Include="Images\strongenemy2.png" />
+    <EmbeddedResource Include="Images\strongfood2.png" />
+    <EmbeddedResource Include="Images\weakenemy2.png" />
+    <EmbeddedResource Include="Images\weakfood2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\heart2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\extraheart1.png" />
+    <EmbeddedResource Include="Images\extraheart2.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Images\Encyclopedia\background1.png" />
+    <Resource Include="Images\Encyclopedia\background2.png" />
+    <Resource Include="Images\Encyclopedia\lifepowerup.png" />
+    <Resource Include="Images\Encyclopedia\seal1.png" />
+    <Resource Include="Images\Encyclopedia\seal2.png" />
+    <Resource Include="Images\Encyclopedia\strongenemy1.png" />
+    <Resource Include="Images\Encyclopedia\strongenemy2.png" />
+    <Resource Include="Images\Encyclopedia\strongfood1.png" />
+    <Resource Include="Images\Encyclopedia\strongfood2.png" />
+    <Resource Include="Images\Encyclopedia\weakenemy1.png" />
+    <Resource Include="Images\Encyclopedia\weakenemy2.png" />
+    <Resource Include="Images\Encyclopedia\weakfood1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
